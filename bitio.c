@@ -140,7 +140,6 @@ struct bitFILE* bitIO_open(const char *path, int mode){
 	bitF->bytepos = 0;
 	bitF->bitpos = 0;
 	bitF->buffer = (unsigned char*)calloc(BIT_IO_BUFFER, sizeof(unsigned char));
-	memset(bitF->buffer, 0, BIT_IO_BUFFER);
 
 	/* open file */
     /*read binary mode */
